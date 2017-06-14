@@ -37,44 +37,44 @@ haskell
 
 ● cat — конкатенира съдържанието на файлове
 --------------------------------------------
-○ общият синтаксис е cat <файл 1 > <файл 2 > … <файл n > > <изходенфайл>
-○ <файл 1 > <файл 2 > … <файл n > са относителни или абсолютни пътища
-○ <изходенфайл> е файл, в който се записва резултатът
+○ общият синтаксис е cat <файл 1 > <файл 2 > … <файл n > > <изходенфайл>  
+○ <файл 1 > <файл 2 > … <файл n > са относителни или абсолютни пътища  
+○ <изходенфайл> е файл, в който се записва резултатът  
 ○ съдържанията на <файл 1 > <файл 2 > … <файл n > се слепват в реда, в който са
-зададени пътищата на файловете, и резултатът се извежда в изходен файл
+зададени пътищата на файловете, и резултатът се извежда в изходен файл  
 ○ ако няма нито един <файл>, съдържанието се въвежда от стандартния вход,
 като въвеждането приключва при въвеждане на знак точка самостоятелно на
-ред.
+ред.  
 ○ ако няма <изходенфайл>,
-съдържанието се извежда на стандартния изход
+съдържанието се извежда на стандартния изход  
 
 ● rm — изтриване на файл
 --------------------------
-○ синтаксисът е rm <файл 1 > <файл 2 > … <файл n >
-○ изтрива всичките файлове, подадени като аргументи
+○ синтаксисът е rm <файл 1 > <файл 2 > … <файл n >  
+○ изтрива всичките файлове, подадени като аргументи  
 
 Пример
 ------
-$ pwd
-/
-$ ls
-folder1 folder2 file1 file2
-$ cd folder1
-$ pwd
-/folder1
-$ cd ..
-$ rm file2
-$ ls
-folder1 folder2 file1
-$ cat > file1
-This is the content for file1
-.
-$ cat file1
-This is the content for file1
-$ cat file1 > file3
-$ cat file3
-This is the content for file1
-$ cat file1 file3 > filte4
-$ cat file4
-This is the content for file1
-This is the content for file1
+$ pwd  
+/  
+$ ls  
+folder1 folder2 file1 file2  
+$ cd folder1  
+$ pwd  
+/folder1  
+$ cd ..  
+$ rm file2  
+$ ls  
+folder1 folder2 file1  
+$ cat > file1  
+This is the content for file1  
+.  
+$ cat file1  
+This is the content for file1  
+$ cat file1 > file3  
+$ cat file3  
+This is the content for file1  
+$ cat file1 file3 > filte4  
+$ cat file4  
+This is the content for file1  
+This is the content for file1  
